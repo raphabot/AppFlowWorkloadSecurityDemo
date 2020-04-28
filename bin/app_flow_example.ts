@@ -1,7 +1,18 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { AppFlowExampleStack } from '../lib/app_flow_example-stack';
+import { AppFlowExampleStack, AppFlowExampleProps } from '../lib/app_flow_example-stack';
+
+
+// Adjust manually
+const regionToDeploy = 'us-east-2';
+const existingAppFlowBucket = 'cloud-one-appflow';
 
 const app = new cdk.App();
-new AppFlowExampleStack(app, 'AppFlowExampleStack');
+const props: AppFlowExampleProps = {
+  appFlowBucket: existingAppFlowBucket,
+  env: {
+    region: regionToDeploy
+  } 
+}
+new AppFlowExampleStack(app, 'AppFlowExampleStack', props);

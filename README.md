@@ -1,8 +1,12 @@
 # Welcome to your CDK TypeScript project!
 
-This is a blank project for TypeScript development with CDK.
+This is a CDK project to showcase AppFlow. More details on blog post.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## How to use
+
+Make the following changes to `bin/app_flow_example.ts`:
+ * `existingAppFlowBucket`  Name of current existing output bucket for your AppFlow
+ * `regionToDeploy`         It should be the same region as above Bucket.
 
 ## Useful commands
 
