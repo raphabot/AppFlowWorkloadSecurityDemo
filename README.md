@@ -1,4 +1,4 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to the AppFlow showcase example!
 
 This is a CDK project to showcase AppFlow. More details on blog post.
 This example uses Trend Micro Cloud One Workload Security as input for AppFlow.
